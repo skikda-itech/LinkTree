@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>akram — links</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" href="assets/itech-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <canvas id="grid-canvas"></canvas>
+
+  <main class="wrap">
+
+    <header class="profile">
+      <img src="assets/Logo.png" class="avatar" alt="Logo">
+      <h1 class="name">S K I K D A - I T E C H</h1>
+      <p class="tag">S c i e n t i f i c - C l u b · skikda</p>
+    </header>
+
+    <div class="content-container">
+
+      <div class="left-col">
+        <nav class="links-grid" aria-label="Links">
+          <a class="link-btn" href="https://www.instagram.com/skikda_i_tech_club/" target="_blank" rel="noopener">
+            <img src="assets/instagram-fill.svg" class="link-icon" alt="Instagram">
+            <span class="link-label">Instagram</span>
+            <span class="link-arrow">→</span>
+          </a>
+          <a class="link-btn" href="https://www.facebook.com/skikdaitech/" target="_blank" rel="noopener">
+            <img src="assets/facebook-fill.svg" class="link-icon" alt="Facebook">
+            <span class="link-label">Facebook</span>
+            <span class="link-arrow">→</span>
+          </a>
+
+          <a class="link-btn" href="#" id="email-link" rel="noopener">
+            <img src="assets/mail-fill.svg" class="link-icon" alt="Email">
+            <span class="link-label">Email</span>
+            <span class="link-arrow">→</span>
+          </a>
+          <a class="link-btn" href="https://dz.linkedin.com/company/skikda-i-tech-club/" target="_blank" rel="noopener">
+            <img src="assets/linkedin-fill.svg" class="link-icon" alt="LinkedIn">
+            <span class="link-label">LinkedIn</span>
+            <span class="link-arrow">→</span>
+          </a>
+
+          <a class="link-btn" href="https://github.com/skikda-itech" target="_blank" rel="noopener">
+            <img src="assets/github-fill.svg" class="link-icon" alt="GitHub">
+            <span class="link-label">GitHub</span>
+            <span class="link-arrow">→</span>
+          </a>
+          <a class="link-btn" href="https://discord.com/invite/DR3GYcnT8s" target="_blank" rel="noopener">
+            <img src="assets/discord-fill.svg" class="link-icon" alt="Discord">
+            <span class="link-label">Discord</span>
+            <span class="link-arrow">→</span>
+          </a>
+
+          <a class="link-btn" href="https://www.tiktok.com/@skikda_i_tech_club" target="_blank" rel="noopener">
+            <img src="assets/tiktok-fill.svg" class="link-icon" alt="TikTok">
+            <span class="link-label">TikTok</span>
+            <span class="link-arrow">→</span>
+          </a>
+          <a class="link-btn" href="https://youtube.com/@skikdaitechclub6774?si=OQ94W3t0Z2Q8oWaK" target="_blank" rel="noopener">
+            <img src="assets/youtube-fill.svg" class="link-icon" alt="YouTube">
+            <span class="link-label">YouTube</span>
+            <span class="link-arrow">→</span>
+          </a>
+
+          <a class="link-btn full-width" href="https://www.google.com/maps/place/RVWP%2B8M6+Skikda+i-Tech+Club+OFFICE,+Skikda/data=!4m2!3m1!1s0x12f1c50004846e5f:0x7a10eef14e0816f4?utm_source=mstt_1&entry=gps&g_ep=CAESCjExLjExNi4xMDEYACCIJyokLDk0MjEyNDc4LDk0MjEwMTkxLDQ3MDc1OTE1LDQ3MDg0MzkzQgJEWg%3D%3D" target="_blank" rel="noopener">
+            <img src="assets/map-pin-fill.svg" class="link-icon" alt="Location">
+            <span class="link-label">Skikda i-Tech Club OFFICE
+RVWP+8M6, Skikda, Algeria</span>
+            <span class="link-arrow">→</span>
+          </a>
+        </nav>
+      </div>
+
+      <div class="right-col">
+        <div class="qrcode-card">
+          <img src="assets/QR.png" alt="QR Code" class="qrcode-img"
+            onerror="this.style.display='none'; document.getElementById('qrcode-alt').style.display='flex';">
+          <div id="qrcode-alt"
+            style="display: none; flex-direction: column; align-items: center; justify-content: center; width: 100%; height: 100%; min-height: 250px; font-weight: bold; text-transform: uppercase; font-family: 'LunaObscura', sans-serif; text-align: center; gap: 8px;">
+            <span>QR CODE</span>
+            <span style="font-size: 12px; opacity: 0.6;">(Image to be provided)</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </main>
+
+  <div class="modal-backdrop" id="email-modal">
+    <div class="modal-card">
+      <div class="modal-title">EMAIL</div>
+      <div class="modal-email" id="email-text">akram@example.com</div>
+      <div class="modal-actions">
+        <button class="modal-btn primary" id="copy-email-btn">COPY</button>
+        <button class="modal-btn" id="close-modal-btn">CLOSE</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
